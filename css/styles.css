@@ -1,0 +1,192 @@
+body {
+    background-color: #ffffff;
+}
+
+.mySkills h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 70px 0;
+}
+
+.flexContainer div {
+    width: 364;
+    height: 353;
+    padding: 30px;
+    background-color: #e3b6d6;
+    text-align: center;
+}
+
+.flexContainer h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    text-align: left;
+}
+
+.flexContainer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.icons img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 110px;
+}
+
+.myWork h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+.lokalTravel h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+}
+
+.lokalTravel p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.lokalTravel button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #000000;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px;
+    width: 205px;
+    height: 75px;
+}
+
+.plantTherapy h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+}
+
+.plantTherapy p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.plantTherapy button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #000000;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px;
+    width: 205px;
+    height: 75px;
+}
+
+.childWelfare h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+}
+
+.childWelfare p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.childWelfare button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #000000;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px;
+    width: 205px;
+    height: 75px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". workImage1 workImage2 workImage3 ."
+    ". lokalTravel plantTherapy childWelfare ."
+}
+
+.workImage1 {
+    grid-area: workImage1;
+    align-self: center;
+}
+
+.lokalTravel {
+    grid-area: lokalTravel;
+    align-self: center, top;
+    text-align: left;
+    padding-right: 150px;
+}
+
+.workImage2 {
+    grid-area: workImage2;
+    align-self: center;
+}
+
+.plantTherapy {
+    grid-area: plantTherapy;
+    align-self: center, top;
+    text-align: left;
+    padding-right: 150px;
+}
+
+.workImage3 {
+    grid-area: workImage3;
+    align-self: center;
+}
+
+.childWelfare {
+    grid-area: childWelfare;
+    align-self: center, top;
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 600) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "workImage1"
+        "lokalTravel"
+        "workImage2"
+        "plantTherapy" 
+        "workImage3"
+        "childWelfare"
+    }
+}
